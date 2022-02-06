@@ -6,7 +6,7 @@
 
 3- Tapez la commande Docker-compose -v . Des infos sur docker compose vont apparaitre sur le terminal 
 
-4- Se rendre dans son dossier projet . Exemple : cd C:\Users\Administrateur\Documents\docker\Adel_Jalloul_asisrc_2022_docker.
+4- Se rendre dans son dossier projet . Exemple : cd C:\Users\Administrateur\Documents\docker\Adel_Jallouli_asisrc_2022_docker.
 
 5- Tapez la commande Docker-compose up .
 
