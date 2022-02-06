@@ -1,22 +1,23 @@
 version: "3"
+
 services:
     server:
       build:
        context: ./backend
-       dockerfile:DockerFile
-       command : /usr/src/app/node_modules/.bin/nodemon server.js
-       volumes :
+       dockerfile: Dockerfile
+       command: /usr/src/app/node_modules/.bin/nodemon server.js
+       volumes:
         - ./backend/:/usr/src/app
         - /usr/src/app/node_modules
         ports:
-          - "5000:5000"
+          - "4000:4000"
           depends_on:
-            - mongo
+            - mongodb
             networks:
               - app-network
               mongo: 
                 image: mongo
-                volumes : 
+                volumes: 
                 - data-volume:/data/db 
                 ports: 
                   - "27017:27017"
